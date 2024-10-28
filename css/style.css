@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap');
+
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+    input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+
+  /* Set color style to inherit */
+  .inherit-color * {
+      color: inherit;
+  }
+
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 991px) {
+      .hide, .hide-tablet {
+          display: none !important;
+      }
+  }
+    @media screen and (max-width: 767px) {
+      .hide-mobile-landscape{
+        display: none !important;
+      }
+  }
+    @media screen and (max-width: 479px) {
+      .hide-mobile{
+        display: none !important;
+      }
+  }
+  
+  .margin-0 {
+    margin: 0rem !important;
+  }
+    
+  .padding-0 {
+    padding: 0rem !important;
+  }
+
+  .spacing-clean {
+  padding: 0rem !important;
+  margin: 0rem !important;
+  }
+
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+    
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+    
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+    
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+    
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+
+  .text-span-gradient {
+  background: var(--Color-Gradient, linear-gradient(90deg, #FFB904 0.01%, #45FFFF 52.55%, #8B18FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .page-wrapper {
+    overflow-x: hidden;
+  }
+
+
+
+/* New class for Hind Madurai Bold */
+
+
+
+.title-heading {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+  line-height: 1; /* Adjust line-height to minimize spacing */
+}
+
+.authors-heading {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+  line-height: 1; /* Adjust line-height to minimize spacing */
+}
+
+
+
+.nav-header {
+    font-family: 'Candara', sans-serif;
+    font-size: 24px; /* adjust as needed */
+    font-weight: bold; /* bold */
+    color: #FFFFFF; /* white */
+    text-align: center; /* center aligned */
+}
+
+
+
+
+
+.navbar_link {
+  width: auto;
+  padding: .75rem 0;
+  font-size: 1.125rem
+}
+
+.navbar_link {
+  font-family: 'Candara', sans-serif;
+  color: #e3e3e3;
+  margin: 0;
+  padding: 1rem;
+  transition: opacity .3s;
+  display: block
+}
+
+.navbar_link:hover {
+  opacity: .7
+}
+
+.navbar_link.w--current {
+  color: #e3e3e3;
+  font-weight: 400
+}
+
+.navbar_link.is-dropdown {
+  padding: 0
+}
+
+.navbar_link.is-dropdown:hover {
+  opacity: 1
+}
+
+
+
+
+.glowing-logo {
+    padding-top: 0px; /* Your existing padding */
+    position: relative;
+    z-index: 1; /* Makes sure the logo stays on top of the glow */
+}
+
+
+
+
+.link-bottom {
+  border-radius: 0.5rem; 
+  background-color: var(--purple);
+  background-color: #827a85; /* Change this value to set the button's background color */
+  color: #ffffff; /* Change this value to set the text color */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: .85rem 1.5rem;
+  font-weight: 500;
+  display: flex
+}
+
+
+
