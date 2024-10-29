@@ -103,8 +103,8 @@
             </div>
           </div>
         </div>
-        <img src="https://cdn.prod.website-files.com/666c58d71e64e2eb5bdf950b/666c5ed80806666cd7633b5c_Gradient.svg"
-          loading="lazy" alt="" class="hero_gradient is-hero hide">
+        <!-- <img src="https://cdn.prod.website-files.com/666c58d71e64e2eb5bdf950b/666c5ed80806666cd7633b5c_Gradient.svg"
+          loading="lazy" alt="" class="hero_gradient is-hero hide"> -->
       </header>
       <!--  -->
 
@@ -129,7 +129,8 @@
             </div>
           </div>
           <img src="images/Sparkles.svg" loading="lazy" alt="" class="footer-sparklers svg-transparent">
-          <img src="images/Background-Gradient.svg" loading="lazy" alt="" class="hero_gradient svg-transparent fade-out">
+          <img src="images/Background-Gradient.svg" loading="lazy" alt=""
+            class="hero_gradient svg-transparent fade-out">
         </header>
       </div>
 
@@ -139,7 +140,14 @@
         <div class="paper_section_title_box">
           <h2 class="paper_section_title">Introduction</h2>
         </div>
-        <h2 class="paper_section_body">Planning with partial observation is a central challenge in embodied AI. A majority of prior works have tackled this challenge by developing agents that physically explore their environment to update their beliefs about the world state. However, humans can imagine unseen parts of the world through a mental exploration and revise their beliefs with imagined observations. Such updated beliefs can allow them to make more informed decisions at the current step, without having to physically explore the world first. To achieve this human-like ability, we introduce the Generative World Explorer (Genex), a video generation model that allows an agent to mentally explore a large-scale 3D world (e.g., urban scenes) and acquire imagined observations to update its belief. </h2>
+        <h2 class="paper_section_body">Planning with partial observation is a central challenge in embodied AI. A
+          majority of prior works have tackled this challenge by developing agents that physically explore their
+          environment to update their beliefs about the world state. However, humans can imagine unseen parts of the
+          world through a mental exploration and revise their beliefs with imagined observations. Such updated beliefs
+          can allow them to make more informed decisions at the current step, without having to physically explore the
+          world first. To achieve this human-like ability, we introduce the Generative World Explorer (Genex), a video
+          generation model that allows an agent to mentally explore a large-scale 3D world (e.g., urban scenes) and
+          acquire imagined observations to update its belief about the world . </h2>
       </div>
 
       <div class="paper_section">
@@ -147,11 +155,24 @@
           <h2 class="paper_section_title">Genex Architecture</h2>
         </div>
         <img class="paper_images" src="images/architecture.svg" alt="Genex Architecture">
-        <h2 class="paper_section_body">Planning with partial observation is a central challenge in embodied AI. A majority of prior works have tackled this challenge by developing agents that physically explore their environment to update their beliefs about the world state. However, humans can imagine unseen parts of the world through a mental exploration and revise their beliefs with imagined observations. Such updated beliefs can allow them to make more informed decisions at the current step, without having to physically explore the world first. To achieve this human-like ability, we introduce the Generative World Explorer (Genex), a video generation model that allows an agent to mentally explore a large-scale 3D world (e.g., urban scenes) and acquire imagined observations to update its belief. </h2>
+        <div class="paper_section_body">
+          <p>
+            Our explorer enables an agent to spatially navigate through its environment, searching for previously
+            unvisited locations.
+            To support exploration, we design a variant of video generation model <em>f<sub>&theta;</sub>: &Ropf;<sup>H
+                &times; W</sup> &rarr; &Ropf;<sup>T &times; H &times; W</sup></em>
+            that takes an input image with height <em>H</em> and width <em>W</em> and outputs a sequence of <em>T</em>
+            images as predicted video.
+            We aim to generate realistic 360-degree panoramic video sequences that simulate forward movement through any
+            environment by leveraging image-to-video diffusion models <em>f<sub>&theta;</sub></em>.
+            We introduce our diffuser architecture and designed spherical consistent learning for panoramic navigataion.
+          </p>
+        </div>
+
       </div>
 
 
-    </div>
+  </div>
   </div>
   </main>
   </div>
@@ -173,6 +194,3 @@
 </body>
 
 </html>
-
-
-

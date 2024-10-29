@@ -1,54 +1,64 @@
 .video_section {
-    margin-bottom: 200px; /* Adds a 20px margin around the section */
+  margin-bottom: 200px;
+  /* Adds a 20px margin around the section */
 }
 
 .paper_section {
-    margin-bottom: 100px; /* Adds a 20px margin around the section */
+  margin-bottom: 100px;
+  /* Adds a 20px margin around the section */
 }
 
 
 .paper_section_title_box {
-    text-align: center
+  text-align: center
 }
 
 
 
 .paper_section_title {
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: 28px;
-    /* Smaller title font */
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10px;
-    /* Less margin for a more compact layout */
-  }
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 28px;
+  /* Smaller title font */
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  /* Less margin for a more compact layout */
+}
 
-  /* Responsive Styling */
+/* Responsive Styling */
 @media screen and (max-width: 768px) {
-    .paper_section_title {
-      font-size: 22px;
-      /* Even smaller font for mobile */
-    }
-
+  .paper_section_title {
+    font-size: 22px;
+    /* Even smaller font for mobile */
   }
 
+}
 
-  .paper_section_body {
-    font-family: 'EB Garamond', serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 1.1;
-    max-width: 60%; /* Keeps the text in the middle part of the screen */
-    margin: 0 auto; /* Centers the text block */
-    text-align: justify; /* Justifies the text to align both left and right */
+
+.paper_section_body {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.1;
+  max-width: 60%;
+  /* Keeps the text in the middle part of the screen */
+  margin: 0 auto;
+  /* Centers the text block */
+  text-align: justify;
+  /* Justifies the text to align both left and right */
 }
 
 
 .paper_images {
-    display: block; /* Allows centering the image with margin auto */
-    margin: 0 auto; /* Centers the image horizontally */
-    max-width:50%; /* Adjusts to a reasonable max width, keeping it responsive */
-    height: auto; /* Keeps the aspect ratio intact */
+  display: block;
+  /* Allows centering the image with margin auto */
+  margin: 0 auto;
+  /* Centers the image horizontally */
+  max-width: 50%;
+  /* Adjusts to a reasonable max width, keeping it responsive */
+  height: auto;
+  /* Keeps the aspect ratio intact */
+  margin-bottom: 1em;
 }
