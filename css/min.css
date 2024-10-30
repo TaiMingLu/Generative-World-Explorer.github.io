@@ -1521,11 +1521,11 @@ textarea.w-select {
 }
 
 .w-lightbox-backdrop,
-.w-lightbox-container {
+/* .w-lightbox-container {
     -webkit-overflow-scrolling: touch;
     height: 100%;
     overflow: auto
-}
+} */
 
 .w-lightbox-content {
     height: 100vh;
@@ -7946,12 +7946,6 @@ figcaption {
     display: none
 }
 
-.body_home {
-    background-image: url(https://cdn.prod.website-files.com/666c58d71e64e2eb5bdf950b/671bb15b502759665d270845_home-bg.png);
-    background-position: 50% -6%;
-    background-repeat: no-repeat;
-    background-size: cover
-}
 
 .hero_wrapper {
     grid-column-gap: 1.75rem;
@@ -8153,9 +8147,9 @@ figcaption {
         direction: ltr
     }
 
-    .page-wrapper {
+    /* .page-wrapper {
         overflow: hidden
-    }
+    } */
 
     .typo-zoom-sticky-inner {
         padding-bottom: 0;

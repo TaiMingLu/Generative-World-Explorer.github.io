@@ -482,9 +482,9 @@ video {
   .ask-component_wrapper {
     padding: 1.75rem 0;
     /* 0 padding on sides */
-    margin-left: 0;
+    margin-left: 0.5em;
     /* Remove left margin */
-    margin-right: 0;
+    margin-right: 0.5em;
     /* Remove right margin */
   }
 }
