@@ -54,14 +54,15 @@
           <div class="nav-header header-span-gradient">Genex</div>
         </a>
         <nav role="navigation" class="navbar_menu is-page-height-tablet w-nav-menu">
-          <a href="#video_demo" class="navbar_link w-nav-link">Video Demo</a>
+          <a href="#video_demo" class="navbar_link w-nav-link">Video</a>
           <a href="#introduction" class="navbar_link w-nav-link">Introduction</a>
           <a href="#architecture" class="navbar_link w-nav-link">Architecture</a>
           <a href="#navigation" class="navbar_link w-nav-link">Navigation</a>
           <a href="#evaluation" class="navbar_link w-nav-link">Evaluation</a>
-          <a href="#" class="navbar_link w-nav-link">Interactive Demo</a>
+          <a href="#embodied" class="navbar_link w-nav-link">Embodied AI</a>
+          <a href="#interactive_demo" class="navbar_link w-nav-link">Interactive</a>
           <div class="navbar_menu-buttons">
-            <a href="./index.html" class="button is-secondary is-small w-button">Home</a>
+            <a href="./index.html" class="button is-secondary is-small w-button"><img src="images/arxiv-logo-white.svg" alt="arXiv Logo" width="40" height="auto"></a>
           </div>
         </nav>
         <div class="navbar_menu-button w-nav-button">
@@ -88,12 +89,12 @@
                     <div class="margin-bottom margin-small">
                       <h1 class="title-heading text-span-gradient">Generative World Explorer</h1>
                     </div>
-                    <p class="authors-heading">Taiming Lu, Tianmin Shu, Daniel Khashabi, Alan Yuille, Jieneng Chen</p>
+                    <p class="authors-heading">Taiming Lu, Tianmin Shu, Alan Yuille, Daniel Khashabi, Jieneng Chen</p>
                     <div class="glowing-logo">
                       <img src="images/jhu.svg" alt="JHU Logo" width="200" height="auto">
                     </div>
                     <div class="margin-top margin-small">
-                      <div class="button-group is-center"><a href="https://openreview.net/pdf?id=8NlUL0Cv1L"
+                      <div class="button-group is-center"><a href="./index.html"
                           target="_blank" class="link-bottom is-icon w-inline-block">
                           <img src="images/arxiv-logo-white.svg" alt="arXiv Logo" width="40" height="auto">
                         </a></div>
@@ -212,17 +213,42 @@
       </div>
 
 
-      <div class="paper_section href_section" id="embodiedAI">
+      <div class="paper_section href_section" id="embodied">
         <div class="paper_section_title_box">
           <h2 class="paper_section_title">Genex for Embodied AI</h2>
         </div>
+        <video id="EQA" autoplay muted playsinline>
+          <source src="video/EQA.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <div class="paper_section_body">
           <p>
-            To ensure generation quality, we introduce navigational cycle consistency. Genex navigates a randomly sampled closed path, returning to the origin. In optimal cases, the start and end views are identical, ensuring consistency in world modeling.
+            Genex gives a new level of intelligence to embodied AI agents.
+            For a single-agent scenario involving decision-making, picture yourself driving down a street when a siren sounds, but you can’t see the source. With Genex, you project what’s ahead. It reveals an ambulance just around the corner. You stop crossing the street to make space for it to pass.
+            For a multi-agent scenario involving interaction, suppose you are waiting at a red light. You see a pedestrian and an approaching car, and everything seems fine. But Genex helps you recognize that the pedestrian can’t see the car. Likewise, the car can’t see the pedestrian. Your vehicle is blocking their views. Realizing this, you act immediately to warn them, preventing a collision.
           </p>
         </div>
       </div>
 
+
+      <div class="paper_section href_section" id="interactive_demo">
+        <div class="paper_section_title_box">
+          <h2 class="paper_section_title">Interactive Demo</h2>
+        </div>
+        <body onload="init_pano('canvas')">
+          <div align="center"> <br>
+            <br>
+            <canvas id="canvas" width="640" height="480">
+              <p>Your browser does not support the HTML5 canvas element.</p>
+            </canvas> <br>
+          </div>
+        </body>
+        </div>
+      </div>
+
+
+
+      
       <div>
           <div class="bg-animation">
             <div id="stars"></div>
@@ -254,6 +280,10 @@
   <script src="js/videoEffect.js"></script>
   <script src="js/colorGradient.js"></script>
   <script src="js/starBackground.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <!-- <script src="js/scroll_video_control.js"></script> -->
+  <script src="js/panorama.js"></script>
 
 
 
