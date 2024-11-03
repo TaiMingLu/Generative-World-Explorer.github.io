@@ -135,6 +135,30 @@ margin-bottom: 1em;
 }
 
 
+.paper_images-large {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  height: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  }
+  
+@media (max-width: 768px) {
+.paper_images-large {
+  max-width: 75%;
+}
+}
+
+@media (max-width: 480px) {
+.paper_images-large {
+  max-width: 80%;
+}
+}
+
+
+
+
 .paper_images-medium {
     display: block;
     margin: 0 auto;

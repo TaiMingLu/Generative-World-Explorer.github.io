@@ -335,7 +335,7 @@ input[type="file"]:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 900px;
   /* Smaller video width */
   margin: 0 auto;
 }
